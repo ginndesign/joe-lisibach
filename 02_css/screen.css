@@ -1,0 +1,784 @@
+/* @group Font-Definitionen */
+@font-face {
+    font-family: 'KomikaTitleRegular';
+    src: url('KomikaTitle-webfont.eot');
+    src: url('KomikaTitle-webfont.eot?#iefix') format('embedded-opentype'),
+         url('KomikaTitle-webfont.woff') format('woff'),
+         url('KomikaTitle-webfont.ttf') format('truetype'),
+         url('KomikaTitle-webfont.svg#KomikaTitleRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* @end */
+
+/* @group Globale-Definitionen */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+::selection { 
+background:#ff6700;
+color:#fff;
+}
+::-moz-selection { 
+background:#ff6700;
+color:#fff;
+}
+ 
+::-webkit-selection { 
+background:#ff6700;
+color:#fff;
+}
+
+body{
+	position: relative;
+	font-size: 12px;
+}
+
+/* Heading, Content, Lists */
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Open Sans';
+	letter-spacing:-0.03em;
+    line-height: 1.2em;
+    font-weight: 800;
+    margin-bottom: 0.5em;
+    color: #01009c;            	
+}
+
+h1{
+    font-size: 3.5em;
+}
+h2{
+    font-size: 1.75em;
+    margin-bottom: 1em;    
+}
+h3{
+    font-size: 1.3em;
+}
+h4{
+	font-family: 'Open Sans';
+	font-weight: 300;
+	font-style: italic;
+    font-size: 1.75em;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+    letter-spacing: 0;
+}
+h5{
+	font-family: 'Open Sans';
+	font-weight: 300;
+	font-style: italic;
+	font-size: 1.16em;
+}
+
+h6, p, ul {
+	font-family: 'Open Sans';
+    font-size: 1.3em;
+    font-weight: 300;
+    line-height: 1.5em;
+    margin-bottom: 0.5em;
+    color: #01009c;            
+}
+
+h6{
+    font-style: italic;
+}
+
+b{
+    font-family: 'Open Sans';
+    font-weight: 700;    
+}
+
+ul{
+	margin-bottom: 1.25em;
+}
+
+li{
+	margin-bottom: 0.62em;
+	list-style-type: none;
+}
+a{
+	color: #ff6700;
+}
+a, a:hover{
+	text-decoration: underline;
+}
+a:hover{
+	color: #01009c;
+}
+iframe{
+	margin-bottom: 10px;
+}
+img{
+	margin-bottom: 20px;
+}
+
+/* @end */
+
+/* @group Header */
+header{
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	height: 250px;	
+}
+.logo{
+	position: absolute;
+	left: 50%;
+	top: 66px;
+	margin: 0 0 0 -475px;
+	z-index: 100;
+}
+
+/* Typo */
+
+.productText h1{
+    font-size: 2.05em;    
+    line-height: 1.2em;    
+    margin: 0 0 5px;
+}
+.productText h2{
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 1.15em;    
+    line-height: 1.56em;    
+    margin: 0 0 10px;
+}
+.productText p, .productText ul{
+    font-size: 0.875em;
+}
+.productText li{
+	list-style-type: disc;
+	list-style-position: outside;
+    margin: 0 0 0 20px;
+}
+
+
+/* @end */
+
+/* @group Navigation */
+
+
+/* Structure */
+
+nav{
+	position: relative;
+	height: 30px;
+	width: 100%;
+	background: #fff;
+	z-index: 10;	
+	border-top: 1px solid #ccc;	
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+}
+
+nav ul{
+	height: 30px;
+	width: 950px;
+	list-style-type: none;	
+	margin: 0 auto;
+}
+
+nav li{
+	float: left;
+    font-family: 'Open Sans';
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 3px 30px 0 0;
+}
+
+nav ul a, nav ul a:hover{
+	text-decoration: none;
+	display: block;
+}
+
+/* Interactive Elements */
+
+.fixed {
+    position:fixed;
+}
+
+.normalMenu, .normalMenu:visited,
+.hoverMenu, .hoverMenu:visited,
+.selectedMenu, .selectedMenu:visited {
+	outline:none;
+	display:block;
+    margin: -18px 0 0 0;
+}
+
+.hoverMenu,.hoverMenu:visited,
+.selectedMenu, .selectedMenu:visited {
+	color:#01009c;
+    margin: -25px 0 20px 0;	
+}
+
+.selected a{
+	color:#01009c;
+}
+
+/* Top Link */
+
+#back-top {
+	margin: 3px 0 0 294px;
+	list-style-image: url(../01_bilder/nach-oben-hover.png);	
+	list-style-position: outside;		
+}
+#back-top .normalMenu:before{
+	position: absolute;
+	margin-left: -20px;
+	content: url(../01_bilder/nach-oben.png);
+}
+
+/* @end */
+
+/* @group Content */
+
+/* @group Table */
+table{
+	width: 690px;
+	text-align: left;
+	border-collapse: collapse;
+	*border-collapse: expression('collapse', cellSpacing = '0px'); /*For IE*/	
+}
+table h1, table h2{
+	margin-bottom: 0.1em;
+}
+table h1{
+	font-size:1.75em;
+}
+table p{
+	font-size: 1.16em;
+}
+table img{
+	margin-bottom: 0;
+}
+td, th{
+	border-left: 1px solid #ccc;
+	padding: 0 10px;
+	overflow: hidden;
+}
+td{
+	border-top:1px solid #ccc;
+	padding: 10px 0 10px 10px;
+	vertical-align: top;
+	overflow: hidden;
+}
+td:first-child, th:first-child{
+	border-left: none;
+	padding-left: 0;
+}
+
+.col1{
+	width: 407px;
+}
+.col2{
+	width: 69px;
+}
+.col3{
+	width: 62px;
+}
+.col4{
+	width: 152px;
+}
+
+.verkauf td{
+	border: none;
+	padding-top: 0;
+}
+table h5, table p{
+	margin-right: 0 !important;
+}
+/* @end */
+
+
+/* @group Wrapper */
+
+.wrapper{
+	position: relative;
+	margin: 0 auto;
+	width: 950px;
+}
+
+/* @end */
+
+
+/* @group Zeile */
+
+section{
+	position: relative;
+	margin: 0;
+	overflow: hidden;
+}
+
+/* @end */
+
+/* @group Spalte */
+
+article{
+	position: relative;
+	margin: 0;
+	float: left;
+	padding-top: 20px;	
+	padding-bottom: 25px;	
+}
+
+/* @group linker & rechter Inhaltsbereich */
+
+.columnLeft,
+.columnRight{
+	float: left;
+}
+.columnLeft{
+	width: 710px;
+	border-right: 1px solid #ccc;
+}
+.columnRight{
+	width: 239px;
+	margin-left: -1px;
+	border-left: 1px solid #ccc;
+}
+.columnLeft section,
+.columnRight section{
+	border-top: 1px solid #ccc;
+}
+.columnLeft section:first-child,
+.columnRight section:first-child{
+	border-top: none;
+}
+.columnLeft article:first-child,
+.columnRight article:first-child{
+	border-left: none;
+	border-right: 1px solid #ccc;
+	margin-left: 0;
+}
+
+/* @group Grid-System 1. Ebene */
+
+.oneThird{
+	width: 33%;
+	border-left: 1px solid #ccc;
+	margin-left: -1px;
+}
+.twoThird{
+	width: 66%;
+	border-left: 1px solid #ccc;
+	margin-left: -1px;		
+}
+.threeThird{
+	width: 100%;
+}
+
+/* Grid-System 2. Ebene */
+.floatHalf{
+	float: left;
+	width: 50%;
+}
+.floatTwo{
+	float: left;
+	width: 66%;
+}
+.floatThree{
+	float: left;
+	width: 33%;
+}
+.floatFour{
+	float: left;
+	width: 25%;
+}
+/* Font Defs*/
+.floatHalf h1{
+	font-size: 2.67em;
+}
+
+/* @end */
+
+/* @group Hyperlink Definitions */
+
+span a h1, span a h2, span a h3, span a h4, span a h5, span a h6, span a p{
+	color: #ff6700;
+}
+span a:hover h1, span a:hover h2, span a:hover h3, span a:hover h4, span a:hover h5, span a:hover h6, span a:hover p{
+	color: #01009c;
+}
+
+/* @end */
+
+/* @group Font Definitions */
+
+.columnLeft h1, .columnLeft h2, .columnLeft h3, .columnLeft h4, .columnLeft h5, .columnLeft h6, .columnLeft p,.columnLeft ul,.columnLeft img{
+	margin-right:20px;
+	margin-left:20px;	
+}
+.columnLeft article:first-child h1, .columnLeft article:first-child h2, .columnLeft article:first-child h3, .columnLeft article:first-child h4, .columnLeft article:first-child h5, .columnLeft article:first-child h6, .columnLeft article:first-child p, .columnLeft article:first-child ul, .columnLeft article:first-child img{
+	margin-right:20px;
+	margin-left: 0;
+}
+.columnRight h1,
+.columnRight h2,
+.columnRight h3,
+.columnRight h4,
+.columnRight h5,
+.columnRight h6,
+.columnRight p,
+.columnRight ul,
+.columnRight img,
+.columnRight iframe{
+	margin-right:0;
+	margin-left: 20px;	
+}
+
+/* @end */
+
+/* @group Bilder */
+
+.center img{
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	padding: 0 0 20px;
+}
+article img{
+	float: left;
+}
+
+.columnRight article img{
+	float: none;
+	margin-bottom: 15px;
+}
+
+.stoererComic{
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+.stoererSika{
+	position: relative;
+	display: block;
+	margin-top: -5px;
+}
+
+.bestellungComic{
+	position: absolute;
+	top: 137px;
+	right: 55px;
+}
+
+/* @end */
+
+/* @group Ausnahmen */
+
+/* News */
+
+.news li{
+	list-style-type: disc;
+	list-style-position: outside;
+	margin-left: 20px;
+	color: #ff6700;	
+}
+
+.news a:hover li{
+	color: #01009c;
+}
+
+.news h1{
+	font-size: 2.67em;	
+	color: #ff6700;
+}
+.pdf{
+	display: none;
+}
+
+.pdf li{
+	list-style-image: url(../01_bilder/Chemische-Baustoffe-PDF-Icon.png);
+}
+.pdf a:hover li{
+	list-style-image: url(../01_bilder/Chemische-Baustoffe-PDF-Icon-hover.png);
+}
+
+
+/* Störer */
+
+.stoerer{
+	background: url(../01_bilder/Stoerer-Orange-gross.png) no-repeat -35px 0;
+	height: 223px;
+}
+.stoerer h1{
+    font-family: 'Open Sans';
+    font-size: 1.5em;    
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 1.5em;    
+    color: #fff;
+    margin-right: 1.67em;    
+}
+.stoerer h1 b{
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 1.17em;    
+}
+.stoerer h1, .stoerer b, .stoerer a{
+	color: #fff;
+}
+.sika{
+	height: 250px;
+}
+.sika p {
+	color: #fff;
+}
+.sika h1{
+	font-weight: 800;
+}
+.bestellung{
+	height: 290px;
+}
+.sackstark p{
+	position: absolute;
+	top: 43px;
+	left: 0;
+}
+.sackstark h1{
+    font-family: 'KomikaTitleRegular';
+    font-size: 2.2em;
+    letter-spacing: 0.05em;
+    font-weight: normal;
+	position: absolute;
+	top: 10px;
+	left: 0;
+}
+.stoerer ::selection { 
+background:#fff;
+color:#ff6700;
+}
+
+.stoerer ::-moz-selection { 
+background:#fff;
+color:#ff6700;
+}
+ 
+.stoerer ::-webkit-selection { 
+background:#fff;
+color:#ff6700;
+}
+
+/* zentrierte Ausrichtung */
+
+.center{
+	text-align: center;
+}
+.center h1, .center h2, .center h3, .center h4, .center h5, .center h6, .center p, .center img{
+	margin: 0 auto;
+	float: none;
+}
+.center h6{
+	margin-bottom: 0.5em;
+	line-height: 1.25em;
+}
+
+/* Kein Rahmen */
+
+.noBorder {
+	border: none !important;
+}
+.noBorder article{
+	padding-top: 0;
+}
+
+/* Randabfallend */
+
+.noPadding, .noPadding img{
+	padding: 0;
+	margin: 0;
+}
+
+/* @end */
+
+/* @end */
+
+/* @end */
+
+/* @end */
+
+/* @group footer */
+footer {
+	position: relative;
+	margin: 0 auto;	
+	width: 100%;	
+	height: 200px;
+	overflow: hidden;
+	background: url(../01_bilder/Chemische-Baustoffe-Footer-BG.jpg) repeat-x center top;
+	border-top: 1px solid #ccc;	
+}
+
+
+footer article{
+	padding-top: 0;
+	padding-bottom: 0;
+	border: none !important;	
+}
+
+/* Typo */
+
+footer article:first-child h1, 
+footer article:first-child p{
+	margin-left: 0;
+}
+
+footer h1, footer p{
+    margin: 0 0 10px 40px;    
+}
+
+footer h1{
+    font-size: 1.33em;    
+    margin-top: 0.65em;
+}
+footer p{
+    font-size: 1.17em;    
+}
+
+/* @end */
+
+/* @group Overlay Kontakt */
+
+.apple_overlay {
+    display:none;
+    width:1000px;
+    padding:0;
+	-webkit-box-shadow: 0 0 50px rgba(1,0,156,0.2);
+	-moz-box-shadow: 0 0 50px rgba(1,0,156,0.2);
+	box-shadow: 0 0 50px rgba(1,0,156,0.2);
+}
+.apple_overlay .close {
+    background:url(../01_bilder/Chemische-Baustoffe-Schliessen-Icon.png) 6px 6px no-repeat white;
+    position:absolute; right:0; top:-30px;
+    cursor:pointer;
+    height:28px;
+    width:28px;
+}
+#overlay {
+    background:url(../01_bilder/Kontakt-BG-Joe-Lisibach.png);
+    color:#efefef;
+	height:225px;
+}
+div.contentWrap {
+	height:225px;
+	overflow:visible;
+	padding: 0;
+	margin: 0;
+}
+.imgKontakt{
+	position: absolute;
+	display: block;
+	right: 0;
+	top: 0;
+	z-index: 1000;
+}
+
+#overlay h1, #overlay p{
+	margin-left: 20px;
+}
+#overlay h1{
+	font-size: 1.75em;
+	letter-spacing:0;	
+}
+#overlay article:first-child{
+	border-left: none;
+}
+#overlay .oneThird{
+	width: 25%;
+	border-left: 1px solid #ccc;
+	margin-left: -1px;
+}
+#overlay .twoThird{
+	width: 75%;
+	border-left: 1px solid #ccc;
+	margin-left: -1px;
+	height: 180px;		
+}
+#overlay .threeThird{
+	width: 100%;
+}
+
+#overlay .logo{
+	position: absolute;
+	left: 50%;
+	top: 50px;
+	margin-left: -87px;
+	z-index: 100;
+}
+
+/* @end */
+
+/* @group Overlay Bestellung */
+.bestellung_overlay {
+    display:none;
+    width:224px;
+    padding:0;
+}
+.bestellung_overlay .close {
+    background:url(../01_bilder/Chemische-Baustoffe-Schliessen-Icon.png) 6px 6px no-repeat white;
+    position:absolute; right:0; top:-30px;
+    cursor:pointer;
+    height:28px;
+    width:28px;
+}
+
+#bestellung {
+    background:url(../01_bilder/BestellungOverlay.png);
+    color:#efefef;
+	height:224px;
+    padding: 60px;
+
+}
+#bestellung h1, #overlay p{
+	margin-left: 20px;
+}
+#bestellung h1{
+    font-family: 'Open Sans';
+    font-weight: 300;
+	font-size: 1.75em;
+	line-height: 1.5em;
+	letter-spacing: 0;
+	color: #fff;
+}
+#bestellung h1 b{
+	font-size: 1.3em;
+	letter-spacing: 0.05em;
+}
+#bestellung .bestellungComic{
+	top: 170px;
+}
+
+#bestellung ::selection { 
+background:#fff;
+color:#ff6700;
+}
+#bestellung ::-moz-selection { 
+background:#fff;
+color:#ff6700;
+}
+ 
+#bestellung ::-webkit-selection { 
+background:#fff;
+color:#ff6700;
+}
+
+/* @end */
+
+/* @group Anker */
+
+.anchor{
+	position: relative;
+	display: block;
+	height: 30px;
+	margin-top: -40px;
+	margin-bottom: 10px;
+}
+
+/* @end */
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
