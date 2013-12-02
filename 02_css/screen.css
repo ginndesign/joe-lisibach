@@ -103,13 +103,13 @@ li{
 	margin-bottom: 0.62em;
 	list-style-type: none;
 }
-a{
+a, a p{
 	color: #ff6700;
 }
-a, a:hover{
+a, a p{
 	text-decoration: underline;
 }
-a:hover{
+a:hover, a:hover p{
 	color: #01009c;
 }
 iframe{
@@ -118,7 +118,9 @@ iframe{
 img{
 	margin-bottom: 20px;
 }
-
+.imageStoerer{
+	height: 130px;
+}
 /* @end */
 
 /* @group Header */
